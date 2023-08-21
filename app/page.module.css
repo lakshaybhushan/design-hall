@@ -1,0 +1,22 @@
+.main {
+  display: flex;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.main img {
+  width: 50vh;
+  position: absolute;
+  display: none;
+  border: 2px;
+  border-style: solid;
+  border-color: white;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+@media screen and (max-width: 768px) {
+  .main img {
+    visibility: hidden;
+  }
+}
